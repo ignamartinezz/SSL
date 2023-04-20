@@ -3,7 +3,8 @@
 
 int main(void)
 {
-    printf("hello world!");
-    /* code */
+    FILE *archivo=fopen("output.txt", "w");
+    fprintf(archivo,"hello world!");
+    fclose(archivo);
     return 0;
 }
